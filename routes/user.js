@@ -40,7 +40,7 @@ router.post("/login",
     passport.authenticate("local",{  failureRedirect: '/login',failureFlash: true  }),
     async (req,res)=>{
         req.flash("success","Welcome back to Wanderlust! ");
-        let redirectUrl = res.locals.redirecturl || "/listings";
+        let redirectUrl = res.locals.redirectUrl || "/listings";
         res.redirect(redirectUrl);
 });
 
