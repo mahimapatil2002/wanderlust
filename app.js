@@ -54,10 +54,10 @@ const sessionOption ={
      },
 };
 
-app.get("/", (req,res)=>{
-    res.send("connected succefully");
-    console.log("connected succefully");
-});
+// app.get("/", (req,res)=>{
+//     res.send("connected succefully");
+//     console.log("connected succefully");
+// });
 
 
 app.use(session(sessionOption));
